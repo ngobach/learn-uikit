@@ -1,0 +1,13 @@
+{
+  "name": "learn-uikit",
+  "version": "1.0.0",
+  "description": "Learn UI KIT",
+  "scripts": {
+    "start": "lite-server"
+  },
+  "author": "BachNX",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.2.2"
+  }
+}
