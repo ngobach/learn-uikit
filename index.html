@@ -9,19 +9,76 @@
     <body>
         <!--Begin body-->
         <div class="uk-container uk-container-center uk-margin-large-bottom uk-margin-top">
-            
-            <div class="uk-article">
-                <h1 class="uk-article-title">Article component</h1>
-                <span class="uk-article-meta">On Sep, 13th 2016 by <b>Ngô Xuân Bách</b></span>
-                <p class="uk-article-lead">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet cum corrupti in, odit modi illo, quidem laborum inventore praesentium libero laudantium, eveniet? Quo cumque quis est sequi enim doloribus illum.
-                </p>
-                <hr class="uk-divider">
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus voluptatem rerum nulla ab illum deleniti quae, ad et molestiae alias quod mollitia necessitatibus quam, iusto nemo dolores. Esse, minus, recusandae!
-                </p>
-            </div>
-            
+            <h1>Nav</h1>
+
+            <div class="uk-grid uk-grid-width-1-4">
+                <div>
+                    <h3>Sample nav</h3>
+                    <ul class="uk-nav uk-nav-side">
+                        <li><a href="#">Item 1</a></li>
+                        <li class="uk-active"><a href="#">Item 2</a></li>
+                        <li><a href="#">Item 3</a></li>
+                        <li><a href="#">Item 4</a></li>
+                        <li><a href="#">Item 5</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h2>Nav tree</h2>
+                    <ul class="uk-nav uk-nav-side uk-nav-parent-icon">
+                        <li><a href="#">Item 1</a></li>
+                        <li class="uk-active"><a href="#">Item 2</a></li>
+                        <li class="uk-parent">
+                            <a href="#">Item 3</a>
+                            <ul class="uk-nav-sub">
+                                <li><a href="#">Sub item 1</a></li>
+                                <li><a href="#">Sub item 2</a></li>
+                                <li><a href="#">Sub item 3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+                </div>
+
+                <div>
+                    <h2>Nav accordion</h2>
+                    <ul class="uk-nav uk-nav-side uk-nav-parent-icon" data-uk-nav="{multiple: true}">
+                        <li><a href="#">Item 1</a></li>
+                        <li class="uk-active"><a href="#">Item 2</a></li>
+                        
+                        <li class="uk-parent">
+                            <a href="#">Item 3</a>
+                            <ul class="uk-nav-sub">
+                                <li><a href="#">Sub item 1</a></li>
+                                <li><a href="#">Sub item 2</a></li>
+                                <li><a href="#">Sub item 3</a></li>
+                            </ul>
+                        </li>
+                        <li class="uk-parent">
+                            <a href="#">Item 4</a>
+                            <ul class="uk-nav-sub">
+                                <li><a href="#">Sub item 1</a></li>
+                                <li><a href="#">Sub item 2</a></li>
+                                <li><a href="#">Sub item 3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3>Header and divider</h3>
+
+                    <ul class="uk-nav uk-nav-side">
+                        <li class="uk-nav-header">Header</li>
+                        <li><a href="#">Item 1</a></li>
+                        <li class="uk-nav-divider"></li>
+                        <li><a href="#">Item 2</a></li>
+                        <li><a href="#">Item 3</a></li>
+                        <li class="uk-nav-divider"></li>
+                        <li><a href="#">Item 4</a></li>
+                    </ul>
+                </div>
+            </div>            
         </div>
 
         <!--Script tags-->
